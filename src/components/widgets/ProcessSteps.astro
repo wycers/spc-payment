@@ -1,0 +1,50 @@
+---
+const steps = [
+  {
+    title: '需求评估',
+    description: '确认设备形态、软件架构、目标商户、交易场景和澳洲上线时间表。',
+  },
+  {
+    title: '方案匹配',
+    description: '匹配终端、SDK / API、测试环境、本地收单路径与部署协作方式。',
+  },
+  {
+    title: '技术接入',
+    description: '协助完成接口联调、交易流程验证、异常场景测试和上线准备。',
+  },
+  {
+    title: '上线部署',
+    description: '支持商户部署、问题排查、交付文档和后续维护沟通。',
+  },
+];
+---
+
+<section id="process" class="bg-[#080b12] py-20 sm:py-28">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6">
+    <div class="grid gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-200">Process</p>
+        <h2 class="mt-4 text-3xl font-semibold tracking-normal text-white sm:text-5xl">从验证到上线的清晰路径</h2>
+        <p class="mt-5 text-lg leading-8 text-slate-400">
+          每个项目从业务可行性、技术适配到商户上线都有不同约束。我们帮助团队把路径提前拆解，减少跨境落地的不确定性。
+        </p>
+      </div>
+
+      <ol class="grid gap-4">
+        {
+          steps.map(({ title, description }, index) => (
+            <li class="grid grid-cols-[3.25rem_1fr] gap-4 rounded-lg border border-white/10 bg-white/[0.045] p-5 shadow-[0_1rem_3rem_rgb(0_0_0_/_0.16)]">
+              <span class="flex h-12 w-12 items-center justify-center rounded-md bg-cyan-300 text-base font-semibold text-slate-950 tabular-nums">
+                {String(index + 1).padStart(2, '0')}
+              </span>
+              <div>
+                <h3 class="text-lg font-semibold text-white">{title}</h3>
+                <p class="mt-2 text-sm leading-7 text-slate-400">{description}</p>
+              </div>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+  </div>
+</section>

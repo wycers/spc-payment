@@ -1,0 +1,54 @@
+---
+const faqs = [
+  {
+    question: '你们是银行吗？',
+    answer:
+      '不是。SPC Pay 不是银行，也不直接提供银行账户或收单牌照服务。我们协助客户理解澳洲本地收款接入路径，并与本地银行 / 收单合作资源进行项目对接和技术落地协作。',
+  },
+  {
+    question: '是否支持中国设备出海澳洲？',
+    answer:
+      '支持。我们服务支付设备厂商、POS 设备厂商、自助设备厂商和跨境硬件集成商，重点协助设备、软件和本地收款流程之间的适配。',
+  },
+  {
+    question: '是否提供 SDK？',
+    answer:
+      '可以根据项目方案提供或协调相关 SDK、API、测试环境和技术接入资料。具体接口形态会根据设备、终端方案和目标收款流程确认。',
+  },
+  {
+    question: '是否可以协助接入澳洲本地收款？',
+    answer:
+      '可以。我们会根据客户业务类型、商户场景、设备形态和上线计划，协助梳理澳洲本地收款接入、测试和部署流程。最终可用方案需以项目评估和合作方要求为准。',
+  },
+  {
+    question: '首次沟通需要准备什么资料？',
+    answer:
+      '建议准备公司介绍、产品类型、目标客户场景、设备或软件接入方式、预计上线市场、当前技术资料和期望时间表。资料越清晰，评估越高效。',
+  },
+];
+---
+
+<section id="faq" class="bg-[#0b1020] py-20 sm:py-28">
+  <div class="mx-auto max-w-4xl px-4 sm:px-6">
+    <div class="text-center">
+      <p class="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-200">FAQ</p>
+      <h2 class="mt-4 text-3xl font-semibold tracking-normal text-white sm:text-5xl">常见问题</h2>
+    </div>
+
+    <div class="mt-12 divide-y divide-white/10 rounded-lg border border-white/10 bg-white/[0.045]">
+      {
+        faqs.map(({ question, answer }) => (
+          <details class="group p-6">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-6 text-left text-lg font-semibold text-white">
+              <span>{question}</span>
+              <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-md border border-white/10 text-cyan-200 transition-transform duration-200 group-open:rotate-45">
+                +
+              </span>
+            </summary>
+            <p class="mt-4 max-w-3xl text-sm leading-7 text-slate-400">{answer}</p>
+          </details>
+        ))
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,55 @@
+---
+import { Icon } from 'astro-icon/components';
+
+const solutions = [
+  {
+    title: 'Payment Terminal Supply',
+    description: '面向澳洲收款场景匹配 EFTPOS / payment terminal 设备方案，支持从样机测试到商户部署的落地路径。',
+    icon: 'tabler:credit-card',
+  },
+  {
+    title: 'SDK & API Integration',
+    description: '协助 POS、SaaS、自助设备和硬件系统完成 SDK、API、交易流程与测试环境接入。',
+    icon: 'tabler:api',
+  },
+  {
+    title: 'Local Acquiring Support',
+    description: '对接澳洲本地收单流程与合作资源，帮助客户理解本地开户、交易和上线要求。',
+    icon: 'tabler:building-bank',
+  },
+  {
+    title: 'Deployment & After-sales',
+    description: '提供上线协调、设备部署支持、问题排查和后续维护，让跨境项目有清晰的本地支持窗口。',
+    icon: 'tabler:lifebuoy',
+  },
+];
+---
+
+<section id="solutions" class="relative overflow-hidden bg-[#0b1020] py-20 sm:py-28">
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_82%_18%,rgb(45_212_191_/_0.12),transparent_28%)]"></div>
+  <div class="relative mx-auto max-w-7xl px-4 sm:px-6">
+    <div class="mx-auto max-w-3xl text-center">
+      <p class="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-200">Solutions</p>
+      <h2 class="mt-4 text-3xl font-semibold tracking-normal text-white sm:text-5xl">
+        设备、SDK、本地收单与上线支持，一起打通
+      </h2>
+      <p class="mt-5 text-lg leading-8 text-slate-400">
+        我们把跨境支付硬件和澳洲本地收款接入之间的关键环节拆清楚，让产品团队更快完成验证、集成和部署。
+      </p>
+    </div>
+
+    <div class="mt-14 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+      {
+        solutions.map(({ title, description, icon }) => (
+          <article class="group rounded-lg border border-white/10 bg-[#101827]/80 p-6 shadow-[0_1.25rem_4rem_rgb(0_0_0_/_0.22)] transition-[border-color,box-shadow,transform] duration-200 hover:-translate-y-1 hover:border-cyan-300/35 hover:shadow-[0_1.5rem_4.5rem_rgb(34_211_238_/_0.1)]">
+            <span class="flex h-11 w-11 items-center justify-center rounded-md bg-white/5 text-cyan-200 ring-1 ring-white/10">
+              <Icon name={icon} class="h-5 w-5" />
+            </span>
+            <h3 class="mt-6 text-xl font-semibold text-white">{title}</h3>
+            <p class="mt-4 text-sm leading-7 text-slate-400">{description}</p>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>

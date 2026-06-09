@@ -1,0 +1,36 @@
+---
+import { Icon } from 'astro-icon/components';
+
+const useCases = [
+  'POS 设备厂商',
+  '餐饮 / 零售 SaaS',
+  'Kiosk / 自助设备厂商',
+  '跨境支付硬件集成商',
+  '连锁门店数字化服务商',
+];
+---
+
+<section id="use-cases" class="bg-[#0b1020] py-20 sm:py-28">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6">
+    <div class="mx-auto max-w-3xl text-center">
+      <p class="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-200">Use Cases</p>
+      <h2 class="mt-4 text-3xl font-semibold tracking-normal text-white sm:text-5xl">适合正在进入澳洲市场的产品团队</h2>
+      <p class="mt-5 text-lg leading-8 text-slate-400">
+        无论你提供硬件、POS 软件、零售 SaaS 还是自助设备，我们关注的是交易链路能否在本地稳定落地。
+      </p>
+    </div>
+
+    <div class="mx-auto mt-12 grid max-w-5xl gap-3 sm:grid-cols-2 lg:grid-cols-3">
+      {
+        useCases.map((item) => (
+          <div class="flex min-h-20 items-center gap-3 rounded-lg border border-white/10 bg-white/[0.045] px-5 py-4">
+            <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-teal-300/10 text-teal-200">
+              <Icon name="tabler:check" class="h-5 w-5" />
+            </span>
+            <span class="text-base font-medium text-slate-200">{item}</span>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

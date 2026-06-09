@@ -1,0 +1,59 @@
+---
+import Button from '~/components/ui/Button.astro';
+---
+
+<section class="relative isolate min-h-[calc(100svh-68px)] overflow-hidden bg-[#080b12] hero-poster">
+  <video
+    class="absolute inset-0 -z-20 h-full w-full object-cover opacity-70 motion-reduce:hidden"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="metadata"
+    poster="/images/hero-desktop-poster.jpg"
+    aria-hidden="true"
+  >
+    <source src="https://cdn.example.com/hero-mobile.webm" type="video/webm" media="(max-width: 767px)" />
+    <source src="https://cdn.example.com/hero-mobile.mp4" type="video/mp4" media="(max-width: 767px)" />
+    <source src="https://cdn.example.com/hero-desktop.webm" type="video/webm" />
+    <source src="https://cdn.example.com/hero-desktop.mp4" type="video/mp4" />
+  </video>
+
+  <div
+    class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_18%_25%,rgb(34_211_238_/_0.22),transparent_28%),linear-gradient(90deg,rgb(8_11_18_/_0.96)_0%,rgb(8_11_18_/_0.78)_38%,rgb(8_11_18_/_0.42)_64%,rgb(8_11_18_/_0.76)_100%)]"
+  >
+  </div>
+  <div class="absolute inset-x-0 bottom-0 -z-10 h-40 bg-gradient-to-t from-[#080b12] to-transparent"></div>
+
+  <div class="mx-auto flex min-h-[calc(100svh-68px)] max-w-7xl items-center px-4 py-20 sm:px-6 lg:py-28">
+    <div class="max-w-4xl">
+      <p class="mb-5 text-xs font-semibold uppercase tracking-[0.24em] text-cyan-200">AUSTRALIA PAYMENT ENABLEMENT</p>
+      <h1 class="max-w-4xl text-5xl font-semibold leading-[1.04] tracking-normal text-white sm:text-6xl lg:text-7xl">
+        中国设备，澳洲收款，轻松接入
+      </h1>
+      <p class="mt-7 max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl">
+        为支付设备厂商、POS 软件商和零售 SaaS 企业提供澳洲本地 EFTPOS 终端、SDK
+        接入与上线支持，帮助你的产品更快进入澳洲市场。
+      </p>
+      <div class="mt-10 flex flex-col gap-3 sm:flex-row">
+        <Button variant="primary" href="/contact" class="w-full sm:w-auto">预约咨询</Button>
+        <Button href="#process" class="w-full sm:w-auto">查看接入流程</Button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero-poster {
+    background-image: url('/images/hero-desktop-poster.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (max-width: 767px) {
+    .hero-poster {
+      background-image: url('/images/hero-mobile-poster.jpg');
+      background-position: center top;
+    }
+  }
+</style>

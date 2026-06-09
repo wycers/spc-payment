@@ -1,0 +1,36 @@
+---
+import { Icon } from 'astro-icon/components';
+
+const points = [
+  '设备可以生产，但不了解澳洲本地收单和银行流程',
+  'POS / SaaS 已经成熟，但缺少本地支付通道',
+  'SDK、测试、上线和商户部署成本高',
+  '缺少本地技术支持和长期维护能力',
+];
+---
+
+<section class="relative bg-[#080b12] py-20 sm:py-24">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6">
+    <div class="max-w-3xl">
+      <p class="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-200">Market Entry Friction</p>
+      <h2 class="mt-4 text-3xl font-semibold tracking-normal text-white sm:text-5xl">
+        出海澳洲，收款接入往往是最难落地的一环
+      </h2>
+    </div>
+
+    <div class="mt-12 grid gap-4 md:grid-cols-2">
+      {
+        points.map((point) => (
+          <div class="rounded-lg border border-white/10 bg-white/[0.045] p-6 shadow-[0_1rem_3rem_rgb(0_0_0_/_0.18)]">
+            <div class="flex gap-4">
+              <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-cyan-300/10 text-cyan-200">
+                <Icon name="tabler:alert-circle" class="h-5 w-5" />
+              </span>
+              <p class="pt-1 text-base leading-7 text-slate-300">{point}</p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

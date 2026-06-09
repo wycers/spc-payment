@@ -1,41 +1,4 @@
-import type { AstroComponentFactory } from 'astro/runtime/server/index.js';
-import type { HTMLAttributes, ImageMetadata } from 'astro/types';
-
-export interface Post {
-  /** Unique ID identifying the post. */
-  id: string;
-  /** URL-friendly slug derived from the post name. */
-  slug: string;
-  /** Fully resolved permalink, computed from the configured pattern. */
-  permalink: string;
-
-  publishDate: Date;
-  updateDate?: Date;
-
-  title: string;
-  /** Optional summary of post content. */
-  excerpt?: string;
-  image?: ImageMetadata | string;
-
-  category?: Taxonomy;
-  tags?: Taxonomy[];
-  author?: string;
-
-  metadata?: MetaData;
-
-  draft?: boolean;
-
-  /** Rendered Astro component factory for the post body. */
-  Content?: AstroComponentFactory;
-
-  /** Estimated reading time in minutes. */
-  readingTime?: number;
-}
-
-export interface Taxonomy {
-  slug: string;
-  title: string;
-}
+import type { HTMLAttributes } from 'astro/types';
 
 export interface MetaData {
   title?: string;
@@ -124,26 +87,6 @@ export interface Item {
   image?: Image;
 }
 
-export interface Price {
-  title?: string;
-  subtitle?: string;
-  description?: string;
-  price?: number | string;
-  period?: string;
-  items?: Array<Item>;
-  callToAction?: CallToAction;
-  hasRibbon?: boolean;
-  ribbonTitle?: string;
-}
-
-export interface Testimonial {
-  title?: string;
-  testimonial?: string;
-  name?: string;
-  job?: string;
-  image?: string | unknown;
-}
-
 export interface Input {
   type: HTMLInputTypeAttribute;
   name: string;
@@ -201,15 +144,6 @@ export interface Team extends Omit<Headline, 'classes'>, Widget {
 
 export interface Stats extends Omit<Headline, 'classes'>, Widget {
   stats?: Array<Stat>;
-}
-
-export interface Pricing extends Omit<Headline, 'classes'>, Widget {
-  prices?: Array<Price>;
-}
-
-export interface Testimonials extends Omit<Headline, 'classes'>, Widget {
-  testimonials?: Array<Testimonial>;
-  callToAction?: CallToAction;
 }
 
 export interface Brands extends Omit<Headline, 'classes'>, Widget {
