@@ -11,7 +11,7 @@ metadata:
   title:
     default: SPC Pay
     template: '%s — SPC Pay'
-  description: 'SPC Pay helps payment device manufacturers, POS software vendors, retail SaaS companies, and kiosk providers integrate Australia-ready EFTPOS terminals, SDKs, APIs, testing, deployment, and support.'
+  description: 'SPC Pay 为支付设备厂商、POS 软件商、零售 SaaS 企业和 Kiosk 服务商提供澳洲本地 EFTPOS 终端、SDK/API 接入、测试、部署与上线支持。'
   robots:
     index: true
     follow: true
@@ -26,7 +26,7 @@ metadata:
     cardType: summary_large_image
 
 i18n:
-  language: en
+  language: zh-CN
   textDirection: ltr
 
 apps:

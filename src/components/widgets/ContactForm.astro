@@ -8,13 +8,24 @@ interface Props {
 
 const {
   id = 'contact',
-  eyebrow = 'Contact',
-  title = 'Book a consultation',
-  subtitle = 'Tell us about your product, target market, and integration timeline. We will use the first conversation to understand fit, technical path, and next steps.',
+  eyebrow = '联系我们',
+  title = '预约咨询',
+  subtitle = '告诉我们你的产品类型、目标市场和当前接入阶段。我们会先确认项目适配度，再讨论终端、SDK/API、测试和上线支持路径。',
 } = Astro.props;
 
-const productTypes = ['Payment terminal', 'POS software', 'SaaS', 'Kiosk', 'Other'];
-const targetMarkets = ['Australia', 'New Zealand', 'Other'];
+const productTypes = [
+  { value: 'Payment terminal', label: '支付终端' },
+  { value: 'POS software', label: 'POS 软件' },
+  { value: 'SaaS', label: 'SaaS' },
+  { value: 'Kiosk', label: 'Kiosk / 自助设备' },
+  { value: 'Other', label: '其他' },
+];
+
+const targetMarkets = [
+  { value: 'Australia', label: '澳洲' },
+  { value: 'New Zealand', label: '新西兰' },
+  { value: 'Other', label: '其他' },
+];
 ---
 
 <section id={id} class="bg-[#080b12] py-20 sm:py-28">
@@ -37,7 +48,7 @@ const targetMarkets = ['Australia', 'New Zealand', 'Other'];
     >
       <div class="grid gap-5 sm:grid-cols-2">
         <label class="grid gap-2 text-sm font-medium text-slate-200">
-          Company name
+          公司名称
           <input
             required
             type="text"
@@ -48,7 +59,7 @@ const targetMarkets = ['Australia', 'New Zealand', 'Other'];
         </label>
 
         <label class="grid gap-2 text-sm font-medium text-slate-200">
-          Contact person
+          联系人
           <input
             required
             type="text"
@@ -59,7 +70,7 @@ const targetMarkets = ['Australia', 'New Zealand', 'Other'];
         </label>
 
         <label class="grid gap-2 text-sm font-medium text-slate-200">
-          Email
+          邮箱
           <input
             required
             type="email"
@@ -70,7 +81,7 @@ const targetMarkets = ['Australia', 'New Zealand', 'Other'];
         </label>
 
         <label class="grid gap-2 text-sm font-medium text-slate-200">
-          WeChat / Phone
+          WeChat / 电话
           <input
             type="text"
             name="wechat_phone"
@@ -80,28 +91,28 @@ const targetMarkets = ['Australia', 'New Zealand', 'Other'];
         </label>
 
         <label class="grid gap-2 text-sm font-medium text-slate-200">
-          Product type
+          产品类型
           <select
             name="product_type"
             class="min-h-12 rounded-md border border-white/10 bg-[#121b2a] px-4 text-base text-white outline-none transition-[border-color,box-shadow] duration-200 focus:border-cyan-300/70 focus:shadow-[0_0_0_3px_rgb(34_211_238_/_0.16)]"
           >
-            {productTypes.map((type) => <option value={type}>{type}</option>)}
+            {productTypes.map(({ value, label }) => <option value={value}>{label}</option>)}
           </select>
         </label>
 
         <label class="grid gap-2 text-sm font-medium text-slate-200">
-          Target market
+          目标市场
           <select
             name="target_market"
             class="min-h-12 rounded-md border border-white/10 bg-[#121b2a] px-4 text-base text-white outline-none transition-[border-color,box-shadow] duration-200 focus:border-cyan-300/70 focus:shadow-[0_0_0_3px_rgb(34_211_238_/_0.16)]"
           >
-            {targetMarkets.map((market) => <option value={market}>{market}</option>)}
+            {targetMarkets.map(({ value, label }) => <option value={value}>{label}</option>)}
           </select>
         </label>
       </div>
 
       <label class="mt-5 grid gap-2 text-sm font-medium text-slate-200">
-        Message
+        项目说明
         <textarea
           name="message"
           rows="5"
@@ -109,7 +120,7 @@ const targetMarkets = ['Australia', 'New Zealand', 'Other'];
         ></textarea>
       </label>
 
-      <button type="submit" class="btn-primary mt-7 w-full">Book a consultation</button>
+      <button type="submit" class="btn-primary mt-7 w-full">预约咨询</button>
     </form>
   </div>
 </section>

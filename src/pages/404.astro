@@ -2,18 +2,16 @@
 import Layout from '~/layouts/PageLayout.astro';
 import { getHomePermalink } from '~/utils/permalinks';
 
-const title = 'Page not found';
+const title = '页面未找到';
 ---
 
 <Layout metadata={{ title }}>
   <section class="flex min-h-[70svh] items-center bg-[#080b12] px-4 py-20 sm:px-6">
     <div class="mx-auto max-w-3xl text-center">
       <p class="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-200">404</p>
-      <h1 class="mt-4 text-4xl font-semibold tracking-normal text-white sm:text-6xl">Page not found</h1>
-      <p class="mx-auto mt-5 max-w-xl text-lg leading-8 text-slate-400">
-        The page may have moved, or the link may no longer be available.
-      </p>
-      <a href={getHomePermalink()} class="btn-primary mt-8">Back to homepage</a>
+      <h1 class="mt-4 text-4xl font-semibold tracking-normal text-white sm:text-6xl">页面未找到</h1>
+      <p class="mx-auto mt-5 max-w-xl text-lg leading-8 text-slate-400">页面可能已经移动，或当前链接暂时不可用。</p>
+      <a href={getHomePermalink()} class="btn-primary mt-8">返回首页</a>
     </div>
   </section>
 </Layout>

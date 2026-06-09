@@ -1,28 +1,28 @@
 ---
-title: 'Privacy'
+title: '隐私政策'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-_Last updated_: June 10, 2026
+_最后更新：2026 年 6 月 10 日_
 
-SPC Pay is a B2B payment enablement website for companies exploring Australia-ready payment terminal, SDK, API, deployment, and support pathways.
+SPC Pay 是面向 B2B 客户的支付接入支持网站，帮助企业了解澳洲本地支付终端、SDK/API、部署和后续支持路径。
 
-## Information We Collect
+## 我们收集的信息
 
-When you contact us, we may collect the details you choose to provide, such as company name, contact person, email, WeChat or phone, product type, target market, and project message.
+当你通过网站联系我们时，我们可能会收集你主动提供的信息，例如公司名称、联系人、邮箱、WeChat 或电话、产品类型、目标市场和项目说明。
 
-We may also receive basic technical information from your browser or hosting provider, such as IP address, device type, pages visited, and timestamps.
+我们也可能从浏览器或托管服务中接收基础技术信息，例如 IP 地址、设备类型、访问页面和时间戳。
 
-## How We Use Information
+## 信息使用方式
 
-We use submitted information to review your inquiry, respond to your request, understand project fit, and coordinate follow-up discussions.
+我们使用提交的信息来评估你的咨询、回复请求、了解项目适配度，并协调后续沟通。
 
-We do not sell personal information. We may share information with service providers or project partners only when needed to respond to your inquiry or support a requested project discussion.
+我们不会出售个人信息。只有在回复咨询或支持项目沟通所需时，我们才可能与服务提供商或项目合作方共享必要信息。
 
-## Data Security
+## 数据安全
 
-No internet transmission or storage method is completely secure. We use reasonable operational measures to protect information submitted through the website.
+任何互联网传输或存储方式都无法保证绝对安全。我们会采取合理的运营措施，保护通过网站提交的信息。
 
-## Contact
+## 联系我们
 
-For privacy questions, contact SPC Pay through the contact form on this website.
+如有隐私相关问题，请通过本网站的联系表单联系 SPC Pay。

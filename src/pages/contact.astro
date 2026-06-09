@@ -3,30 +3,29 @@ import Layout from '~/layouts/PageLayout.astro';
 import ContactForm from '~/components/widgets/ContactForm.astro';
 
 const metadata = {
-  title: 'Contact',
+  title: '联系 SPC Pay',
   description:
-    'Contact SPC Pay to discuss Australia EFTPOS terminal, SDK, API, acquiring support, deployment, and after-sales support for payment devices, POS software, SaaS, and kiosks.',
+    '联系 SPC Pay，讨论澳洲 EFTPOS 终端、SDK/API、本地收单协作、部署和售后支持，适用于支付设备、POS 软件、SaaS 与 Kiosk 项目。',
 };
 ---
 
 <Layout metadata={metadata}>
   <section class="bg-[#080b12] px-4 pb-4 pt-16 sm:px-6 sm:pt-20">
     <div class="mx-auto max-w-7xl">
-      <p class="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-200">Contact SPC Pay</p>
+      <p class="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-200">联系 SPC Pay</p>
       <h1 class="mt-4 max-w-4xl text-4xl font-semibold tracking-normal text-white sm:text-6xl">
-        Discuss your Australia payment integration
+        讨论你的澳洲收款接入项目
       </h1>
       <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-400">
-        Share the product you are bringing to market, the customer segment you serve, and the payment flow you need to
-        support. We will start with a practical review of fit and next steps.
+        告诉我们你的产品类型、目标客户和需要支持的交易流程。我们会先做项目适配度评估，再讨论可行的技术接入和上线路径。
       </p>
     </div>
   </section>
 
   <ContactForm
     id="form"
-    eyebrow="Consultation"
-    title="Book a consultation"
-    subtitle="Share your project context, integration stage, and launch timeline. We focus on terminal deployment, SDK/API integration, local acquiring coordination, testing, and launch support."
+    eyebrow="项目咨询"
+    title="预约咨询"
+    subtitle="分享你的项目背景、当前接入阶段和预计上线时间。我们重点协助终端部署、SDK/API 集成、本地收单协作、测试与上线支持。"
   />
 </Layout>

@@ -1,26 +1,26 @@
 ---
-title: 'Terms'
+title: '服务条款'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-_Last updated_: June 10, 2026
+_最后更新：2026 年 6 月 10 日_
 
-This website is provided by SPC Pay for general B2B information about Australia payment enablement, terminal deployment, SDK/API integration, and project support.
+本网站由 SPC Pay 提供，用于展示面向 B2B 客户的澳洲收款接入、终端部署、SDK/API 集成和项目支持相关信息。
 
-## Website Content
+## 网站内容
 
-Content on this website is for general information only. It does not constitute legal, financial, regulatory, banking, or compliance advice.
+本网站内容仅供一般信息参考，不构成法律、财务、监管、银行或合规建议。
 
-References to payment flows, acquiring support, SDKs, testing, deployment, or local operational requirements are subject to project assessment and relevant partner requirements.
+涉及交易流程、本地收单协作、SDK、测试、部署或本地运营要求的说明，均需以具体项目评估和相关合作方要求为准。
 
-## No Banking Representation
+## 非银行声明
 
-SPC Pay is not presented as a bank. We do not promise account approval, acquiring approval, fixed pricing, regulatory approval, or guaranteed launch outcomes.
+SPC Pay 不作为银行进行展示。我们不承诺银行账户审批、收单审批、固定价格、监管批准或保证上线结果。
 
-## Use of the Website
+## 网站使用
 
-You agree not to misuse the website, interfere with its operation, or submit information that is unlawful, misleading, or not yours to provide.
+你同意不滥用本网站、不干扰网站运行，也不提交违法、误导性或无权提供的信息。
 
-## Contact
+## 联系我们
 
-For questions about these terms, contact SPC Pay through the contact form on this website.
+如对本条款有疑问，请通过本网站的联系表单联系 SPC Pay。
